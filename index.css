@@ -53,9 +53,9 @@ body{
         margin:auto;
 
     }
-} {
+} 
     
-}
+
 
 /*************************************************************************************************************/
 
@@ -284,7 +284,6 @@ body{
     }
     .boton-aboutme{
         outline: none;
-        background-color: ;
         border: 0px solid transparent;
         width: 40%;
         height: 4vh;
@@ -315,7 +314,7 @@ body{
                                                              /* ESTILOS SECTION PROYECTOS 320PX*/
     .contenedor-section-projects{
         width: 100%;
-        height: 75vh;
+        height: 140vh;
         background-color: #312C2C;
     }
     .contenedor-section-projects h2{
@@ -330,12 +329,11 @@ body{
         align-items: center;
         align-content: center;
         width: 100%;
-        height: 90vh;
+        height: 135vh;
     }
     .proyectos{
         width: 80%;
         height: 20vh;
-        background-color: green;
         border: 1px solid #00D05A;
         overflow: hidden;
         transition: 300ms ease;
@@ -407,6 +405,67 @@ body{
         width: 100%;
         height: 50vh;
     }
+    
+}
+                                                                /* FINALIZA 320PX*/
+
+                                                        /* COMIENZA ESTILOS MEDIAQUERY 400PX*/
+@media  screen and (min-width:400px){
+    .proyectos{
+        width: 70%;
+    }
+    .proyectos:hover div{
+        width: 70%;
+    }
+}
+@media  screen and (min-width:480px) {
+    .contenedor-proyectos{
+        flex-direction: row;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        margin-top: 1vh;
+        height: 72vh;
+    }
+    .contenedor-section-projects{
+        height: 72vh;
+    }
+    .proyectos{
+        width: 45%;
+        margin: 1%;
+    }
+    .proyectos:hover div{
+        width: 45%;
+    }
+    .boton-proyecto{
+        width: 70%;
+    }
+    .contenedor-informacion-aboutme{
+        margin: auto;
+        max-width: 550px;
+    }
+}
+@media screen and (min-width:660px) {
+    .contenedor-proyectos{
+        max-width: 660px;
+    }
+    .proyectos{
+        width: 45%;
+        margin: 2%;
+        max-width: 295px;
+    }
+    .proyectos:hover div{
+        width: 45%;
+        max-width: 295px;
+    }
+    .contenedor-section-projects{
+        height: 80vh;
+    }
+
+    .contenedor-proyectos{
+        height: 80vh;
+    }
 
 }
-/* FINALIZA 320PX*/
