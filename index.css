@@ -64,12 +64,12 @@ body{
 
     }
 } 
-@keyframes animacionIconos {
+@keyframes animacionRedes {
     0%{
-        filter: grayscale(0%);
+        filter:hue-rotate(0deg);
     }
     100%{
-        filter: grayscale(100%);
+        filter: hue-rotate(360deg);
     }
 
 }
@@ -104,10 +104,6 @@ body{
         border-bottom: 0px solid transparent;
     }
 
-    .list-item-navbar a:hover{
-        border-bottom: 1px solid #FFF;
-    }
-
     .contenedor-language{
         display: none;
         background-color: #201D20;
@@ -119,10 +115,15 @@ body{
         text-align: center;
         cursor: pointer;
         width: 100%;
+        border-bottom: 1px solid transparent;
     }
 
     .contenedor-language .list-item-navbar:hover{
         border-bottom: 1px solid #2AB6E6;
+
+    }
+    .contenedor-language a{
+        border-bottom: 0px solid transparent;
 
     }
 
@@ -262,6 +263,22 @@ body{
         border: 1px solid #00D05A;
         box-shadow: 0px 0px 10px #00D05A;
     }
+    .contenedor-redes-aboutme{
+        margin: auto;
+        margin-top: -2vh;
+        margin-bottom: 1vh;
+        height: 24px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 8px #FFF;
+        padding: 5px;
+
+    }
+    .contenedor-redes-aboutme .iconos-redes{
+        animation: animacionRedes;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
 
     /**********************************************************************************************************************/
 
@@ -300,12 +317,6 @@ body{
         grid-row: auto;
         width: 32px;
         transition: 100ms ease;
-    }
-    .iconos-redes{
-        margin: auto;
-        grid-row: auto;
-        width: 32px;
-        cursor: pointer;
     }
 
     .iconos:hover{
@@ -521,14 +532,18 @@ body{
     }
     .contenedor-redes{
         margin-top: 1vh;
-        padding-top: 5px;
-        background-color: #DDDDDD;
+        padding-top: 2px;
+        background-color: #00D05A;
         color: black;
     }
     .iconos-redes{
-        width: 24px;
-        padding: 1px;
-        filter: saturate(0);
+        text-align: center;
+        cursor: pointer;
+        width: 22px;
+        margin-left: 15px;
+    }
+    .cancel-margin{
+        margin-left: 0px;
     }
 }
                                                                 /* FINALIZA 320PX*/
