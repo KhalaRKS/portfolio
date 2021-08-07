@@ -13,13 +13,16 @@
 }
 .contenedor-general{
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     background-color: #201D20;
     color: white;
 }
 .contenedor-navbar{
     width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    z-index: 1;
     background-color: #201D20;
     height: 5vh;
 }
@@ -27,7 +30,7 @@
     list-style: none;
 }
 body{
-    background-color: #312C2C;
+    background-color: #212121;
 }
 
 /********************************************************************************************************************/
@@ -54,6 +57,15 @@ body{
 
     }
 } 
+@keyframes animacionIconos {
+    0%{
+        filter: grayscale(0%);
+    }
+    100%{
+        filter: grayscale(100%);
+    }
+
+}
     
 
 
@@ -73,18 +85,20 @@ body{
     }
     .contenedor-language{
         display: none;
-        position: fixed;
         background-color: #201D20;
         right: 0;
-        width: 17%;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         text-align: start;
-        border-bottom: 1px solid #fff;
+    }
+    .contenedor-language .list-item-navbar{
+        text-align: center;
     }
     .contenedor-language li:hover {
         border-left: 1px solid #2AB6E6;
+        
         
     }
     #language-display:hover .contenedor-language{
@@ -95,17 +109,18 @@ body{
         width: 25%;
         height: 25px;
         padding-top:1.5vh;
+        font-style: italic;
 
     }
     .list-item-navbar a{
         color: inherit;
         padding: 5px;
         background-color: #201D20;
+        border-bottom: 0px solid #00D05A;
 
     }
     .list-item-navbar a:hover{
-        text-shadow: 0px 0px 15px #ffff;
-        transition: 150ms ease;
+        border-bottom: 1px solid #FFF;
         
 
     }
@@ -126,7 +141,8 @@ body{
         font-size: 2em;
     }
     .contenedor-textos-header{
-        padding-top: 3vh;
+        margin: auto;
+        padding-top: 10vh;
         font-weight: 600;
     }
     #hashtag-header{
@@ -136,6 +152,7 @@ body{
     #boton-knowme-header{
         margin-top:3vh;
         width: 25%;
+        max-width: 200px;
         height: 2.5vh;
         outline: none;
         border: 0px solid transparent;
@@ -182,20 +199,13 @@ body{
         animation-direction: reverse;
         animation-iteration-count: infinite;
     }
-    #animacion-cinco{
-        animation: borderAnimation;
-        animation-duration: 1.754s;
-        animation-delay: 5.12s;
-        animation-direction: reverse;
-        animation-iteration-count: infinite;
-    }
 
     /********************************************************************************************************************************/
 
                                                                 /* COMIENZO DISEÑOS SECCION ABOUT ME */
 
     .contenedor-article-aboutme{
-        height: 100vh;
+        height: 105vh;
     }
     .contenedor-article-aboutme h2{
         text-align: center;
@@ -205,8 +215,6 @@ body{
     .contenedor-informacion-aboutme{
         display: flex;
         flex-direction: column;
-
-
     }
                                                                 /* ESTILOS FOTO PERFIL HEADER 320px*/ 
 
@@ -236,7 +244,7 @@ body{
     /**********************************************************************************************************************/
 
     .contenedor-texto-aboutme{
-        width: 95%;
+        width: 90%;
         margin: auto;
         font-style: italic;
     }
@@ -250,7 +258,7 @@ body{
     .contenedor-iconos{
         display: grid;
         width: 100%;
-        height: 15vh;
+        height: 20vh;
         grid-template-columns: repeat(3, auto);
         grid-auto-rows: minmax(48px, auto);
         grid-gap: 15px;
@@ -401,11 +409,80 @@ body{
     
     /*ESTILOS SECTION CONTACTO*/
     .contenedor-section-contact{
-        margin-top: 10vh;
         width: 100%;
         height: 50vh;
     }
-    
+    .contenedor-section-contact{
+        text-align: center;
+        padding: 0;
+    }
+    .contenedor-section-contact h2{
+        padding-top: 2vh;
+    }
+    .contenedor-formulario{
+        text-align: start;
+        margin: auto;
+        margin-top: 3vh;
+        width: 100%;
+        border-bottom: 2px solid #2AB6E6;
+        border-top: 2px solid #2AB6E6;
+        padding:10px
+    }
+    .formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .formulario div input,
+    .formulario div textarea{
+        max-width: 200px;
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+        border: 0px solid transparent;
+        height: 100%;
+        width: 100%;
+        min-width: 200px;
+        transition: .5s ease;
+        font-size: 1em;
+        font-weight: 600;
+        color: black;
+    }
+    #textarea{
+        height: 50px;
+        width: 100%;
+        max-width: 0px;
+        outline: none;
+        box-shadow: none;
+        border: 0px solid transparent;
+        resize: none;
+    }
+    .name{
+        position: absolute;
+        z-index: 0;
+        color: white;
+    }
+    .formulario div .input-datos:focus,
+    .formulario div .input-datos:valid
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vh;
+        background-color: #2AB6E6;
+
+    }
+    #textarea:focus{
+        margin-top: 3vh;
+        width: 100%;
+        background-color: #2AB6E6;
+    }
+    #boton-submit{
+        background-color: #2AB6E6;
+        color: #FFF;
+    }
 }
                                                                 /* FINALIZA 320PX*/
 
@@ -468,4 +545,25 @@ body{
         height: 80vh;
     }
 
+}
+@media screen and (min-width:900px) {
+    .contenedor-proyectos{
+        max-width: 900px;
+    }
+    .proyectos{
+        width: 40%;
+        margin: 2%;
+        max-width: 250px;
+    }
+    .proyectos:hover div{
+        width: 45%;
+        max-width: 250px;
+    }
+    .contenedor-section-projects{
+        height: 55vh;
+    }
+
+    .contenedor-proyectos{
+        height: 80vh;
+    }
 }
