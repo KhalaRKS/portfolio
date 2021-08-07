@@ -31,7 +31,7 @@ html{
     position: fixed;
     z-index: 1;
     background-color: #201D20;
-    height: 5vh;
+    height: 45px;
 }
 .contenedor-navbar ul{
     list-style: none;
@@ -93,7 +93,7 @@ body{
     .list-item-navbar{
         width: 25%;
         height: 25px;
-        padding-top:1.5vh;
+        padding-top:15px;
         font-style: italic;
     }
 
@@ -102,6 +102,9 @@ body{
         padding: 5px;
         background-color: #201D20;
         border-bottom: 0px solid transparent;
+    }
+    .list-item-navbar a:hover{
+        border-bottom: 1px solid #FFF;
     }
 
     .contenedor-language{
@@ -122,7 +125,7 @@ body{
         border-bottom: 1px solid #2AB6E6;
 
     }
-    .contenedor-language a{
+    .contenedor-language a:hover{
         border-bottom: 0px solid transparent;
 
     }
@@ -135,7 +138,7 @@ body{
     }
     .contenedor-section-info-header{
         width: 100%;
-        height: 40vh;
+        height:300px;
         text-align: center;
         background: url('imagenes/fondo-header.jpg') repeat fixed 100%;
         background-size:cover;
@@ -154,7 +157,7 @@ body{
 
     .contenedor-textos-header{
         margin: auto;
-        padding-top: 10vh;
+        padding-top: 100px;
         font-weight: 600;
     }
 
@@ -164,10 +167,10 @@ body{
     }
 
     #boton-knowme-header{
-        margin-top:3vh;
+        margin-top:20px;
         width: 25%;
         max-width: 200px;
-        height: 2.5vh;
+        height: 20px;
         outline: none;
         border: 0px solid transparent;
         background: #2AB6E6;
@@ -223,7 +226,8 @@ body{
                                                                 /* COMIENZO DISEÑOS SECCION ABOUT ME */
 
     .contenedor-article-aboutme{
-        height: 100vh;
+        min-height: 900px;
+        height: 900px;
     }
 
     .contenedor-article-aboutme h2{
@@ -241,14 +245,14 @@ body{
     .foto-perfil-header{
         width: 70%;
         margin: auto;
-        margin-top: 2vh;
-        height: 23vh;
+        margin-top: 5px;
+        height: 150px;
         text-align: center;
     }
 
     .foto-perfil-header img{
         width: 100%;
-        height: 20vh;
+        height: 150px;
         max-width: 215px;
         filter: grayscale(100%);
         border: 1px solid #00D05A;
@@ -265,8 +269,8 @@ body{
     }
     .contenedor-redes-aboutme{
         margin: auto;
-        margin-top: -2vh;
-        margin-bottom: 1vh;
+        margin-top: 10px;
+        margin-bottom: 5px;
         height: 24px;
         border-radius: 5px;
         background-color: #ffffff;
@@ -299,7 +303,7 @@ body{
     .contenedor-iconos{
         display: grid;
         width: 100%;
-        height: 20vh;
+        height: 450px;
         grid-template-columns: repeat(3, auto);
         grid-auto-rows: minmax(48px, auto);
         grid-gap: 15px;
@@ -308,7 +312,7 @@ body{
     .titulo-iconos{
         grid-column: 1/4;
         text-align: center;
-        padding-top: 3vh;
+        padding-top: 15px;
     }
 
     .iconos{
@@ -332,7 +336,7 @@ body{
         align-content: center;
         align-items: center;
         width: 100%;
-        height: 5vh;
+        height: 40px;
 
     }
 
@@ -340,7 +344,7 @@ body{
         outline: none;
         border: 0px solid transparent;
         width: 40%;
-        height: 4vh;
+        height: 30px;
         transition: 150ms ease;
         font-size: 1em;
         font-weight: 600;
@@ -369,7 +373,7 @@ body{
                                                              /* ESTILOS SECTION PROYECTOS 320PX*/
     .contenedor-section-projects{
         width: 100%;
-        height: 140vh;
+        height: 1000px;
         background-color: #312C2C;
     }
     .contenedor-section-projects h2{
@@ -384,11 +388,11 @@ body{
         align-items: center;
         align-content: center;
         width: 100%;
-        height: 135vh;
+        height: 950px;
     }
     .proyectos{
         width: 80%;
-        height: 20vh;
+        height: 140px;
         border: 1px solid #00D05A;
         overflow: hidden;
         transition: 300ms ease;
@@ -413,18 +417,18 @@ body{
         display: flex;
         position: absolute;
         width: 80%;
-        height: 20vh;
+        height: 140px;
         opacity: 1;
         background-color: #312c2ccb;
     }
     .proyectos:hover .boton-proyecto{
-        bottom: 5vh;
+        bottom: 25px;
         animation: movimientoBoton;
         animation-duration: .4s;
         
     }
     .proyectos:hover div p{
-        top: 4vh;
+        top: 25px;
         animation: movimientoBoton;
         animation-duration: .8s;
         
@@ -432,7 +436,7 @@ body{
     .boton-proyecto{
         margin: auto;
         width: 50%;
-        height: 3vh;
+        height: 20px;
         font-weight: 700;
         font-style: italic;
         text-transform: uppercase;
@@ -446,7 +450,7 @@ body{
     }
     .proyectos img{
         width: 100%;
-        height: 20vh;
+        height: 140px;
         object-fit: cover;
         transition: 300ms ease;
     }
@@ -457,7 +461,7 @@ body{
     /*ESTILOS SECTION CONTACTO*/
     .contenedor-section-contact{
         width: 100%;
-        height: 35vh;
+        height: 350px;
     }
     .contenedor-section-contact{
         text-align: center;
@@ -465,12 +469,12 @@ body{
     }
     .contenedor-section-contact h2{
         font-size: 1.4em;
-        padding-top: 2vh;
+        padding-top: 10px;
     }
     .contenedor-formulario{
         text-align: start;
         margin: auto;
-        margin-top: 3vh;
+        margin-top: 15px;
         width: 100%;
         border-bottom: 2px solid #2AB6E6;
         border-top: 2px solid #2AB6E6;
@@ -502,7 +506,7 @@ body{
         color: white;
     }
     #textarea{
-        height: 5vh;
+        height: 50px;
         width: 100%;
         max-width: 0px;
         outline: none;
@@ -520,13 +524,13 @@ body{
     {
         width: 100%;
         height: 100%;
-        margin-top: 2vh;
+        margin-top: 20px;
         background-color: #2AB6E6;
 
     }
     #boton-submit{
         background-color: #2AB6E6;
-        margin-top: 1vh;
+        margin-top: 5px;
         color: #FFF;
         cursor: pointer;
     }
@@ -570,7 +574,7 @@ body{
         justify-content: center;
         align-items: center;
         align-content: flex-start;
-        margin-top: 1vh;
+        margin-top: 5px;
         height: 72vh;
     }
     .contenedor-section-projects{
@@ -610,16 +614,19 @@ body{
         max-width: 295px;
     }
     .contenedor-section-projects{
-        height: 80vh;
+        height: 600px;
     }
 
     .contenedor-proyectos{
-        height: 80vh;
+        height: 600px;
     }
     .formulario div input,
     .formulario div textarea{
         max-width: 380px;
         min-width: 380px;
+    }
+    .contenedor-section-contact{
+        height: 300px;
     }
 }
 @media screen and (min-width:900px) {
@@ -636,15 +643,18 @@ body{
         max-width: 250px;
     }
     .contenedor-section-projects{
-        height: 55vh;
+        height: 400px;
     }
 
     .contenedor-proyectos{
-        height: 80vh;
+        height: 600px;
     }
     .formulario div input,
     .formulario div textarea{
         max-width: 600px;
         min-width: 600px;
+    }
+    .contenedor-section-contact{
+        height: 300px;
     }
 }
