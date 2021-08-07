@@ -11,6 +11,13 @@
     font-family: 'Nunito Sans', sans-serif;
 
 }
+#pointer{
+    cursor: pointer;
+}
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 .contenedor-general{
     width: 100%;
     max-width: 1200px;
@@ -81,48 +88,49 @@ body{
         font-size: 0.8em;
         font-weight: 600;
         text-align: center;
-        
     }
-    .contenedor-language{
-        display: none;
-        background-color: #201D20;
-        right: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: start;
-    }
-    .contenedor-language .list-item-navbar{
-        text-align: center;
-    }
-    .contenedor-language li:hover {
-        border-left: 1px solid #2AB6E6;
-        
-        
-    }
-    #language-display:hover .contenedor-language{
-        display: flex;
-    }
-
+    
     .list-item-navbar{
         width: 25%;
         height: 25px;
         padding-top:1.5vh;
         font-style: italic;
-
     }
+
     .list-item-navbar a{
         color: inherit;
         padding: 5px;
         background-color: #201D20;
-        border-bottom: 0px solid #00D05A;
-
+        border-bottom: 0px solid transparent;
     }
+
     .list-item-navbar a:hover{
         border-bottom: 1px solid #FFF;
-        
+    }
 
+    .contenedor-language{
+        display: none;
+        background-color: #201D20;
+        width: 100%;
+        border-bottom: 1px solid transparent;
+    }
+
+    .contenedor-language .list-item-navbar{
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .contenedor-language .list-item-navbar:hover{
+        border-bottom: 1px solid #2AB6E6;
+
+    }
+
+    #language-display:hover .contenedor-language{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
     .contenedor-section-info-header{
         width: 100%;
@@ -134,21 +142,26 @@ body{
         background-repeat: no-repeat;
         font-style: italic;
     }
+
     .contenedor-section-info-header h1{
         font-style: italic;
     }
+
     .contenedor-section-info-header h2{
         font-size: 2em;
     }
+
     .contenedor-textos-header{
         margin: auto;
         padding-top: 10vh;
         font-weight: 600;
     }
+
     #hashtag-header{
         color: #2AB6E6;
         text-shadow: 0px 0px 15px #00D05A;
     }
+
     #boton-knowme-header{
         margin-top:3vh;
         width: 25%;
@@ -164,6 +177,7 @@ body{
         font-size: 0.8em;
         font-weight: 700;
     }
+
     #boton-knowme-header:hover{
         text-shadow: 1px 0px 25px white;
         box-shadow: 0px 0px 15px #2AB6E6;
@@ -178,6 +192,7 @@ body{
       animation-direction: reverse;
       animation-iteration-count: infinite;
     }
+
     #animacion-dos{
         animation: borderAnimation;
         animation-duration: 2s;
@@ -185,6 +200,7 @@ body{
         animation-direction: reverse;
         animation-iteration-count: infinite;
     }
+
     #animacion-tres{
         animation: borderAnimation;
         animation-duration: 2s;
@@ -192,6 +208,7 @@ body{
         animation-direction: reverse;
         animation-iteration-count: infinite;
     }
+
     #animacion-cuatro{
         animation: borderAnimation;
         animation-duration: 2s;
@@ -205,13 +222,15 @@ body{
                                                                 /* COMIENZO DISEÑOS SECCION ABOUT ME */
 
     .contenedor-article-aboutme{
-        height: 105vh;
+        height: 100vh;
     }
+
     .contenedor-article-aboutme h2{
         text-align: center;
         margin-top: 1vh;
         font-style: italic;
     }
+
     .contenedor-informacion-aboutme{
         display: flex;
         flex-direction: column;
@@ -225,6 +244,7 @@ body{
         height: 23vh;
         text-align: center;
     }
+
     .foto-perfil-header img{
         width: 100%;
         height: 20vh;
@@ -236,11 +256,13 @@ body{
         border-radius: 5%;
         transition: 150ms ease;
     }
+
     .foto-perfil-header img:hover{
         filter: grayscale(0%);
         border: 1px solid #00D05A;
         box-shadow: 0px 0px 10px #00D05A;
     }
+
     /**********************************************************************************************************************/
 
     .contenedor-texto-aboutme{
@@ -248,6 +270,7 @@ body{
         margin: auto;
         font-style: italic;
     }
+
     #first-letter-aboutme{
         color: #2AB6E6;
         font-weight: 600;
@@ -255,6 +278,7 @@ body{
         line-height: 1em;
         font-size: 2em;
     }
+
     .contenedor-iconos{
         display: grid;
         width: 100%;
@@ -263,11 +287,13 @@ body{
         grid-auto-rows: minmax(48px, auto);
         grid-gap: 15px;
     }
+
     .titulo-iconos{
         grid-column: 1/4;
         text-align: center;
         padding-top: 3vh;
     }
+
     .iconos{
         filter: grayscale(100%);
         margin: auto;
@@ -275,12 +301,20 @@ body{
         width: 32px;
         transition: 100ms ease;
     }
+    .iconos-redes{
+        margin: auto;
+        grid-row: auto;
+        width: 32px;
+        cursor: pointer;
+    }
+
     .iconos:hover{
         filter: grayscale(0%);
         margin: auto;
         grid-row: auto;
         width: 32px;
     }
+
     .contenedor-botones-aboutme{
         display: flex;
         justify-content: space-around;
@@ -290,6 +324,7 @@ body{
         height: 5vh;
 
     }
+
     .boton-aboutme{
         outline: none;
         border: 0px solid transparent;
@@ -300,11 +335,12 @@ body{
         font-weight: 600;
         font-style: italic;
         cursor: pointer;
-
     }
+
     #boton-download{
         background-color: #00D05A;
     }
+
     #boton-download:hover{
         background-color: #00D05A;
         box-shadow: 0px 0px 10px #00D05A;
@@ -410,13 +446,14 @@ body{
     /*ESTILOS SECTION CONTACTO*/
     .contenedor-section-contact{
         width: 100%;
-        height: 50vh;
+        height: 35vh;
     }
     .contenedor-section-contact{
         text-align: center;
         padding: 0;
     }
     .contenedor-section-contact h2{
+        font-size: 1.4em;
         padding-top: 2vh;
     }
     .contenedor-formulario{
@@ -426,7 +463,8 @@ body{
         width: 100%;
         border-bottom: 2px solid #2AB6E6;
         border-top: 2px solid #2AB6E6;
-        padding:10px
+        padding-top:10px;
+        padding-bottom: 10px;
     }
     .formulario{
         width: 100%;
@@ -436,23 +474,24 @@ body{
         align-items: center;
         align-content: center;
     }
+
     .formulario div input,
     .formulario div textarea{
-        max-width: 200px;
+        max-width: 250px;
         background-color: transparent;
         outline: none;
         box-shadow: none;
         border: 0px solid transparent;
         height: 100%;
         width: 100%;
-        min-width: 200px;
+        min-width: 250px;
         transition: .5s ease;
         font-size: 1em;
         font-weight: 600;
-        color: black;
+        color: white;
     }
     #textarea{
-        height: 50px;
+        height: 5vh;
         width: 100%;
         max-width: 0px;
         outline: none;
@@ -470,18 +509,26 @@ body{
     {
         width: 100%;
         height: 100%;
-        margin-top: 3vh;
+        margin-top: 2vh;
         background-color: #2AB6E6;
 
     }
-    #textarea:focus{
-        margin-top: 3vh;
-        width: 100%;
-        background-color: #2AB6E6;
-    }
     #boton-submit{
         background-color: #2AB6E6;
+        margin-top: 1vh;
         color: #FFF;
+        cursor: pointer;
+    }
+    .contenedor-redes{
+        margin-top: 1vh;
+        padding-top: 5px;
+        background-color: #DDDDDD;
+        color: black;
+    }
+    .iconos-redes{
+        width: 24px;
+        padding: 1px;
+        filter: saturate(0);
     }
 }
                                                                 /* FINALIZA 320PX*/
@@ -493,6 +540,11 @@ body{
     }
     .proyectos:hover div{
         width: 70%;
+    }
+    .formulario div input,
+    .formulario div textarea{
+        max-width: 300px;
+        min-width: 300px;
     }
 }
 @media  screen and (min-width:480px) {
@@ -523,6 +575,11 @@ body{
         margin: auto;
         max-width: 550px;
     }
+    .formulario div input,
+    .formulario div textarea{
+        max-width: 360px;
+        min-width: 360px;
+    }
 }
 @media screen and (min-width:660px) {
     .contenedor-proyectos{
@@ -544,7 +601,11 @@ body{
     .contenedor-proyectos{
         height: 80vh;
     }
-
+    .formulario div input,
+    .formulario div textarea{
+        max-width: 380px;
+        min-width: 380px;
+    }
 }
 @media screen and (min-width:900px) {
     .contenedor-proyectos{
@@ -565,5 +626,10 @@ body{
 
     .contenedor-proyectos{
         height: 80vh;
+    }
+    .formulario div input,
+    .formulario div textarea{
+        max-width: 600px;
+        min-width: 600px;
     }
 }

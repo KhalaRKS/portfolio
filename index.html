@@ -17,13 +17,13 @@
         <header class="contenedor-header">
             <nav class="contenedor-navbar">
                 <ul class="contenedor-buscador-navbar">
-                    <li class="list-item-navbar"><a href="#">About me</a></li>
-                    <li class="list-item-navbar"><a href="#">Projects</a></li>
-                    <li class="list-item-navbar"><a href="#">Contact me</a></li>
+                    <li class="list-item-navbar"><a href="#aboutme">About me</a></li>
+                    <li class="list-item-navbar"><a href="#projects">Projects</a></li>
+                    <li class="list-item-navbar"><a href="#contact">Contact me</a></li>
                     <li class="list-item-navbar" id="language-display">Language
                         <ul class="contenedor-language">
-                            <li class="list-item-navbar"><a href="#">Spanish</a> </li>
-                            <li class="list-item-navbar"><a href="#">English</a></li>
+                            <li class="list-item-navbar">Spanish</li>
+                            <li class="list-item-navbar">English</li>
                         </ul>
                     </li>
                 </ul>
@@ -33,14 +33,14 @@
                     <h2>I'm <span id="animacion-uno">Albano</span> Kainer </h2>
                     <p><span id="animacion-tres">an</span> Argentinian</p>
                     <h1>Full <span id="animacion-cuatro">stack</span>  web <span id="hashtag-header">#</span> <span id="animacion-dos">developer</span></h1>
-                    <button id="boton-knowme-header">KNOW ME</button>
+                    <a href="#aboutme" id="pointer"><button id="boton-knowme-header">KNOW ME</button></a>
                 </div>
             </section>
         </header>
         <main>
             <!--Section About me-->
                 <section>
-                    <article class="contenedor-article-aboutme">
+                    <article class="contenedor-article-aboutme" id="aboutme">
                             <h2>About  me</h2>
                             <div class="contenedor-informacion-aboutme">
 
@@ -80,7 +80,7 @@
         
                 </section>
                 <!--Section Projects-->
-                <section class="contenedor-section-projects">
+                <section class="contenedor-section-projects" id="projects">
                     <h2>Projects I made</h2>
                     <div class="contenedor-proyectos">
                         <div class="proyectos">
@@ -104,7 +104,7 @@
                     </div>
                 </section>
                 <!--Section Contact me -->
-                <section class="contenedor-section-contact">
+                <section class="contenedor-section-contact" id="contact">
                     <h2>Something of this likes you?</h2>
                     <p>Feels free to contact me</p>
                     <div class="contenedor-formulario">
@@ -118,14 +118,21 @@
                                 <input class="input-datos"  type="text" required="required">
                             </div>
                             <div>
-                                <span class="name">Type your message here...</span>
-                                <textarea name="" id="textarea"></textarea>
+                                <span class="name" id="textname">Type your message here...</span>
+                                <input class="input-datos" id="textarea" type="text" required="required">
+                                <!--<textarea name="textarea" id="textarea" type="text" required="required"></textarea>-->
                             </div>
                             <div>
                                 <input type="submit" id="boton-submit" value="Send">
                             </div>
                         </form>
                     </div>
+                    <div class="contenedor-redes">
+                        <a href=""><img src="imagenes/iconos/github-logo.svg" class="iconos-redes" alt=""></a>
+                        <a href=""><img src="imagenes/iconos/linkedin-logo.svg" class="iconos-redes" alt=""></a>
+                        <a href=""><img src="imagenes/iconos/instagram-logo.svg" class="iconos-redes" alt=""></a>
+                    </div>
+                                            <p id="footer-text">All rights reserved - Icon made by Free icons from www.freeicons.io</p>
                 </section>
         </main>
         <footer></footer>
