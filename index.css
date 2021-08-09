@@ -11,12 +11,6 @@
     font-family: 'Nunito Sans', sans-serif;
 
 }
-.checkbox{
-    width: 3%;
-    margin-left: 2%;
-    height: 25px;
-    padding-top:15px;
-}
 #pointer{
     cursor: pointer;
 }
@@ -233,7 +227,7 @@ body{
 
     .contenedor-article-aboutme{
         min-height: 900px;
-        height: 900px;
+        height: 1050px;
     }
 
     .contenedor-article-aboutme h2{
