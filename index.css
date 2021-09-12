@@ -438,6 +438,7 @@ body{
         width: 50%;
         height: 20px;
         font-weight: 700;
+        font-size: 0.9em;
         font-style: italic;
         text-transform: uppercase;
         background-color: transparent;
@@ -447,6 +448,9 @@ body{
     }
     .boton-proyecto:hover{
         box-shadow: 0px 0px 10px #2AB6E6;
+    }
+    .boton-proyecto a{
+        width: 100%;
     }
     .proyectos img{
         width: 100%;
