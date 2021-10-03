@@ -133,19 +133,18 @@
                     <h2>Something caught your attention?</h2>
                     <p>Feel free to contact me</p>
                     <div class="contenedor-formulario">
-                        <form action="" class="formulario">
+                        <form action="formulario.php" class="formulario" method="POST">
                             <div>
                                 <span class="name">First name</span>
-                                <input  class="input-datos" type="text" required="required">
+                                <input  class="input-datos" type="text" name="name"required="required">
                             </div>
                             <div>
                                 <span class="name">Email</span>
-                                <input class="input-datos"  type="text" required="required">
+                                <input class="input-datos"  type="text" name="email" required="required">
                             </div>
                             <div>
                                 <span class="name" id="textname">Type your message here...</span>
-                                <input class="input-datos" id="textarea" type="text" required="required">
-                                <!--<textarea name="textarea" id="textarea" type="text" required="required"></textarea>-->
+                                <textarea class="input-datos" id="textarea" id="" name="mensaje" cols="30" rows="10"></textarea>
                             </div>
                             <div>
                                 <input type="submit" id="boton-submit" value="Send">
