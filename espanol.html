@@ -118,7 +118,7 @@
                     <h2>¿Algo llamo tu atención?</h2>
                     <p>No dudes en contactarme</p>
                     <div class="contenedor-formulario">
-                        <form action="mailto:albanokainer@hotmail.com" enctype="text/plain" class="formulario">
+                        <form  class="formulario">
                             <div>
                                 <span class="name">Nombre</span>
                                 <input  class="input-datos" type="text" name="name" required="required">
@@ -128,9 +128,12 @@
                                 <input class="input-datos"  type="text" name="email" required="required">
                             </div>
                             <div>
+                                <span class="name">Asunto</span>
+                                <input class="input-datos"  type="text" name="subject" required="required">
+                            </div>
+                            <div>
                                 <span class="name" id="textname">Escribe tu mensaje aquí...</span>
-                                <input class="input-datos" id="textarea" type="text" name="mensaje" required="required">
-                                <!--<textarea name="textarea" id="textarea" type="text" required="required"></textarea>-->
+                                <textarea class="input-datos" id="textarea" id="" name="mensaje" cols="30" rows="10"></textarea>
                             </div>
                             <div>
                                 <input type="submit" id="boton-submit" value="Enviar">
