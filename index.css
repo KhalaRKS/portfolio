@@ -74,6 +74,23 @@ body{
     }
 
 }
+@keyframes animacionIconos {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
     
 
 
@@ -308,15 +325,15 @@ body{
     }
 
     .iconos{
-        filter: grayscale(0%);
         margin: auto;
         grid-row: auto;
         width: 32px;
-        transition: 100ms ease;
     }
 
     .iconos:hover{
-        filter: grayscale(0%);
+        animation: animacionIconos;
+        animation-duration: .5s;
+        animation-iteration-count:infinite;
         margin: auto;
         grid-row: auto;
         width: 32px;
