@@ -1,124 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="imagenes/iconos/favicon.png" sizes="60x60">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      href="imagenes/iconos/favicon.png"
+      sizes="60x60"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Albano Kainer Web designer</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Section header-->
     <div class="contenedor-general">
+      <header class="contenedor-header">
+        <nav class="contenedor-navbar">
+          <ul class="contenedor-buscador-navbar">
+            <li class="list-item-navbar"><a href="#aboutme">Sobre mí</a></li>
+            <li class="list-item-navbar"><a href="#projects">Proyectos</a></li>
+            <li class="list-item-navbar"><a href="#contact">Contáctame</a></li>
+            <li class="list-item-navbar" id="language-display">
+              Idioma
+              <ul class="contenedor-language">
+                <li class="list-item-navbar">Español</li>
+                <li class="list-item-navbar">
+                  <a href="index.html">Inglés</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section class="contenedor-section-info-header">
+          <div class="contenedor-textos-header">
+            <h2>Hola, soy <span id="animacion-uno">Albano</span> Kainer</h2>
+            <h1>
+              Junior <span id="animacion-cuatro">web </span
+              ><span id="hashtag-header">#</span
+              ><span id="animacion-dos">developer</span>
+            </h1>
+            <p>un<span id="animacion-tres"> programador</span> Argentino</p>
+            <a href="#aboutme" id="pointer"
+              ><button id="boton-knowme-header">KNOW ME</button></a
+            >
+          </div>
+        </section>
+      </header>
+      <main>
+        <!--Section About me-->
+        <section>
+          <article class="contenedor-article-aboutme" id="aboutme">
+            <h2>Sobre mí</h2>
+            <div class="contenedor-informacion-aboutme">
+              <div class="foto-perfil-header">
+                <div><img src="imagenes/foto-perfil.jpg" alt="" /></div>
+              </div>
+              <div class="contenedor-redes-aboutme">
+                <a href="https://github.com/KhalaRKS" target="_blank"
+                  ><img
+                    src="imagenes/iconos/github-logo.svg"
+                    class="iconos-redes cancel-margin"
+                    alt=""
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/albanokainer/"
+                  target="_blank"
+                  ><img
+                    src="imagenes/iconos/linkedin-logo.svg"
+                    class="iconos-redes"
+                    alt=""
+                /></a>
+                <a href="https://www.instagram.com/alba_kainer/" target="_blank"
+                  ><img
+                    src="imagenes/iconos/instagram-logo.svg"
+                    class="iconos-redes"
+                    alt=""
+                /></a>
+              </div>
+              <div class="contenedor-texto-aboutme">
+                <p>
+                  <span id="first-letter-aboutme">H</span>ola, te doy la
+                  bienvenida a mi página web, mi nombre es Albano, aunque me
+                  gusta que me digan Alba, y soy un apasionado de la tecnologia
+                  en todos sus aspectos.
+                </p>
+                <p>
+                  <span id="first-letter-aboutme">S</span>oy estudiante de
+                  Ingenieria en Sistemas y a su vez estudio Programación Web
+                  hace 1 año, y me encuentro en busqueda laboral para poder
+                  superar metas y crecer tanto con el equipo de trabajo como
+                  personalmente.
+                </p>
+                <p>
+                  <span id="first-letter-aboutme">T</span>e invito a que sigas
+                  deslizando y conozcas un poco mas sobre mis proyectos,
+                  conocimiento y metas de aprendizaje a futuro que tengo pensado
+                  completar.
+                </p>
+              </div>
+              <div class="contenedor-botones-aboutme">
+                <a
+                  href="download/AlbanoLucasKainer_CV.pdf"
+                  download="AlbanoLucasKainer_CV.pdf"
+                  class="boton-aboutme"
+                  id="boton-download"
+                  ><button class="boton-descarga">Descargar CV</button></a
+                >
+                <button class="boton-aboutme" id="boton-contactme">
+                  Contáctame
+                </button>
+              </div>
 
-        <header class="contenedor-header">
-            <nav class="contenedor-navbar">
-                <ul class="contenedor-buscador-navbar">
-                    <li class="list-item-navbar"><a href="#aboutme">Sobre mí</a></li>
-                    <li class="list-item-navbar"><a href="#projects">Proyectos</a></li>
-                    <li class="list-item-navbar"><a href="#contact">Contáctame</a></li>
-                    <li class="list-item-navbar" id="language-display">Idioma
-                        <ul class="contenedor-language">
-                            <li class="list-item-navbar">Español</li>
-                            <li class="list-item-navbar"><a href="index.html">Inglés</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <section class="contenedor-section-info-header">
-                <div class="contenedor-textos-header">
-                    <h2>Hola, soy <span id="animacion-uno">Albano</span> Kainer </h2>
-                    <h1>Junior <span id="animacion-cuatro">web </span><span id="hashtag-header">#</span><span id="animacion-dos">developer</span></h1>
-                    <p>un<span id="animacion-tres"> programador</span> Argentino</p>
-                    <a href="#aboutme" id="pointer"><button id="boton-knowme-header">KNOW ME</button></a>
-                </div>
-            </section>
-        </header>
-        <main>
-            <!--Section About me-->
-                <section>
-                    <article class="contenedor-article-aboutme" id="aboutme">
-                            <h2>Sobre mí</h2>
-                            <div class="contenedor-informacion-aboutme">
+              <div class="contenedor-iconos">
+                <h3 class="titulo-iconos">Tecnologias que utilizo</h3>
+                <img
+                  src="imagenes/iconos/css-logo.svg"
+                  class="iconos"
+                  alt="css-logo"
+                />
+                <img
+                  src="imagenes/iconos/js-logo.svg"
+                  class="iconos"
+                  alt="javascript-logo"
+                />
+                <img
+                  src="imagenes/iconos/html-logo.svg"
+                  class="iconos"
+                  alt="html-logo"
+                />
+                <img
+                  src="imagenes/iconos/sass-logo.svg"
+                  class="iconos"
+                  alt="sass-logo"
+                />
+                <img
+                  src="imagenes/iconos/bs-logo.svg"
+                  class="iconos"
+                  alt="bootstrap-logo"
+                />
+                <img
+                  src="imagenes/iconos/git-logo.svg"
+                  class="iconos"
+                  alt="git-logo"
+                />
+                <h3 class="titulo-iconos">¿Que estoy aprendiendo?</h3>
+                <img
+                  src="imagenes/iconos/react-logo.svg"
+                  class="iconos"
+                  alt="react-logo"
+                />
+                <img
+                  src="imagenes/iconos/nodejs-logo.svg"
+                  class="iconos"
+                  alt="nodejs-logo"
+                />
+                <img
+                  src="imagenes/iconos/mongodb-logo.svg"
+                  class="iconos"
+                  alt="mongodb-logo"
+                />
+                <h3 class="titulo-iconos">¿Que Tengo Pensado aprender?</h3>
+                <img
+                  src="imagenes/iconos/angular-logo.svg"
+                  class="iconos"
+                  alt="angular-logo"
+                />
+                <img
+                  src="imagenes/iconos/ts-logo.svg"
+                  class="iconos"
+                  alt="typescript-logo"
+                />
+                <img
+                  src="imagenes/iconos/python-logo.svg"
+                  class="iconos"
+                  alt="python-logo"
+                />
+              </div>
+            </div>
+          </article>
+        </section>
+        <!--Section Projects-->
+        <section class="contenedor-section-projects" id="projects">
+          <h2>Proyectos realizados</h2>
+          <div class="contenedor-proyectos">
+            <div class="proyectos">
+              <div>
+                <p>Aerolab Challenge</p>
+                <a target="_blank" href="https://react-project-khalarks.vercel.app/" class="boton-proyecto">Ver Proyecto</a>
+              </div>
+              <img
+                src="imagenes/react-aerolab.png"
+                alt="react-aerolab-challenge-imagen"
+              />
+            </div>
+            <div class="proyectos">
+              <div>
+                <p>Ecommerce Front End</p>
+                <a
+                  target="_blank"
+                  href="https://integradorjs.vercel.app/"
+                  class="boton-proyecto"
+                  >Ver proyecto</a
+                >
+              </div>
+              <img src="imagenes/integradorjs.png" alt="" />
+            </div>
+            <div class="proyectos">
+              <div>
+                <p>Axie project</p>
+                <a
+                  target="_blank"
+                  href="https://buscador-nu.vercel.app/"
+                  class="boton-proyecto"
+                  >Ver proyecto</a
+                >
+              </div>
+              <img src="imagenes/axie-project.png" alt="" />
+            </div>
+            <div class="proyectos">
+              <div>
+                <p>Juego Faster aim</p>
+                <button class="boton-proyecto">Ver proyecto</button>
+              </div>
+              <img src="imagenes/minijuego.jpg" alt="minijuego-imagen" />
+            </div>
+            <div class="proyectos">
+              <div>
+                <p>Proyecto integrador</p>
+                <button class="boton-proyecto">Ver proyecto</button>
+              </div>
+              <img src="imagenes/integrador.jpg" alt="Integrador-imagen" />
+            </div>
+            <div class="proyectos">
+              <div>
+                <p>MD landing page</p>
+                <button class="boton-proyecto">Ver proyecto</button>
+              </div>
+              <img src="imagenes/md-proyecto.png" alt="landingpage-imagen" />
+            </div>
+          </div>
+        </section>
+        <!--Section Contact me -->
 
-                                <div class="foto-perfil-header">
-                                    <div ><img src="imagenes/foto-perfil.jpg" alt=""></div>
-                                </div>
-                                <div class="contenedor-redes-aboutme">
-                                    <a href="https://github.com/KhalaRKS" target="_blank"><img src="imagenes/iconos/github-logo.svg" class="iconos-redes cancel-margin" alt=""></a>
-                                    <a href="https://www.linkedin.com/in/albanokainer/" target="_blank"><img src="imagenes/iconos/linkedin-logo.svg" class="iconos-redes" alt=""></a>
-                                    <a href="https://www.instagram.com/alba_kainer/" target="_blank"><img src="imagenes/iconos/instagram-logo.svg" class="iconos-redes" alt=""></a>
-                                </div>
-                                <div class="contenedor-texto-aboutme">
-                                    <p><span id="first-letter-aboutme">H</span>ola, te doy la bienvenida a mi página web, mi nombre es Albano, aunque me gusta que me digan Alba, y soy un apasionado de la tecnologia en todos sus aspectos.
-                                    </p>
-                                    <p><span id="first-letter-aboutme">S</span>oy estudiante de Ingenieria en Sistemas y a su vez 
-                                                                        estudio Programación Web hace 1 año, y me encuentro en busqueda laboral para poder superar metas y crecer tanto con el equipo de trabajo como personalmente.
-                                    </p>
-                                    <p><span id="first-letter-aboutme">T</span>e invito a que sigas deslizando y conozcas un poco mas sobre mis proyectos, conocimiento y metas de aprendizaje a futuro que tengo pensado completar.
-                                    </p>
-                                </div>
-                                <div class="contenedor-botones-aboutme">
-                                       <a href="download/AlbanoLucasKainer_CV.pdf" download="AlbanoLucasKainer_CV.pdf" class="boton-aboutme" id="boton-download"><button class="boton-descarga">Descargar CV</button></a> 
-                                        <button class="boton-aboutme" id="boton-contactme">Contáctame</button>
-                                </div>
-                                
-                                <div class="contenedor-iconos">
-                                    <h3 class="titulo-iconos">Tecnologias que utilizo</h3>
-                                    <img src="imagenes/iconos/css-logo.svg" class="iconos" alt="css-logo">
-                                    <img src="imagenes/iconos/js-logo.svg" class="iconos" alt="javascript-logo">
-                                    <img src="imagenes/iconos/html-logo.svg" class="iconos" alt="html-logo">
-                                    <img src="imagenes/iconos/sass-logo.svg" class="iconos" alt="sass-logo">
-                                    <img src="imagenes/iconos/bs-logo.svg" class="iconos" alt="bootstrap-logo">
-                                    <img src="imagenes/iconos/git-logo.svg" class="iconos" alt="git-logo">
-                                    <h3 class="titulo-iconos">¿Que estoy aprendiendo? </h3>
-                                    <img src="imagenes/iconos/react-logo.svg" class="iconos" alt="react-logo">
-                                    <img src="imagenes/iconos/nodejs-logo.svg" class="iconos" alt="nodejs-logo">
-                                    <img src="imagenes/iconos/mongodb-logo.svg" class="iconos" alt="mongodb-logo">
-                                    <h3 class="titulo-iconos">¿Que Tengo Pensado aprender? </h3>
-                                    <img src="imagenes/iconos/angular-logo.svg" class="iconos" alt="angular-logo">
-                                    <img src="imagenes/iconos/ts-logo.svg" class="iconos" alt="typescript-logo">
-                                    <img src="imagenes/iconos/python-logo.svg" class="iconos" alt="python-logo">
-                                </div>
-                            </div>
-                    </article>
-        
-                </section>
-                <!--Section Projects-->
-                <section class="contenedor-section-projects" id="projects">
-                    <h2>Proyectos realizados</h2>
-                    <div class="contenedor-proyectos">
-                        <div class="proyectos">
-                            <div><p>Una calculadora web</p>
-                            <button class="boton-proyecto">En progreso</button></div>
-                            <img src="imagenes/calculadora-proyecto.png" alt="calculadora-imagen"></div>
-                        <div class="proyectos"><div><p>MD landing page</p>
-                            <button class="boton-proyecto">Ver proyecto</button></div>
-                        <img src="imagenes/md-proyecto.png" alt="landingpage-imagen"></div>
-                        <div class="proyectos"><div><p>Juego Faster aim</p>
-                            <button class="boton-proyecto">Ver proyecto</button></div>
-                            <img src="imagenes/minijuego.jpg" alt="minijuego-imagen"></div>
-                        <div class="proyectos"><div><p>Proyecto integrador</p>
-                            <button class="boton-proyecto">Ver proyecto</button></div>
-                        <img src="imagenes/integrador.jpg" alt="Integrador-imagen"></div>
-                        <div class="proyectos"><div><p>Axie project</p>
-                            <a target="_blank"  href="https://buscador-nu.vercel.app/" class="boton-proyecto">Ver proyecto</a></div>
-                        <img src="imagenes/axie-project.png" alt=""></div>
-                        <div class="proyectos"><div><p>Ecommerce Front End</p>
-                            <a target="_blank"  href="https://integradorjs.vercel.app/" class="boton-proyecto">Ver proyecto</a></div>
-                        <img src="imagenes/integradorjs.png" alt=""></div>
-                    </div>
-                </section>
-                <!--Section Contact me -->
-                
-                <section class="contenedor-section-contact" id="contact">
-                    <h2>¿Algo llamo tu atención?</h2>
-                    <p>No dudes en contactarme</p>
-                    <!--
+        <section class="contenedor-section-contact" id="contact">
+          <h2>¿Algo llamo tu atención?</h2>
+          <p>No dudes en contactarme</p>
+          <!--
                         <div class="contenedor-formulario">
                             <form  class="formulario">
                                 <div>
@@ -143,21 +278,37 @@
                             </form>
                         </div>
                     -->
-                    </section>
-
-            </main>
-            <footer>
-
-                <div class="contenedor-redes">
-                    <p>Mis redes sociales</p>
-                    <div>
-                        <a href="https://github.com/KhalaRKS" target="_blank"><img src="imagenes/iconos/github-logo.svg" class="iconos-redes cancel-margin" alt=""></a>
-                        <a href="https://www.linkedin.com/in/albanokainer/" target="_blank"><img src="imagenes/iconos/linkedin-logo.svg" class="iconos-redes" alt=""></a>
-                        <a href="https://www.instagram.com/alba_kainer/" target="_blank"><img src="imagenes/iconos/instagram-logo.svg" class="iconos-redes" alt=""></a>
-                    </div>
-                    <p id="footer-text">Todos los derechos reservados - Icon made by Free icons from www.freeicons.io</p>
-                </div>
-            </footer>
+        </section>
+      </main>
+      <footer>
+        <div class="contenedor-redes">
+          <p>Mis redes sociales</p>
+          <div>
+            <a href="https://github.com/KhalaRKS" target="_blank"
+              ><img
+                src="imagenes/iconos/github-logo.svg"
+                class="iconos-redes cancel-margin"
+                alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/albanokainer/" target="_blank"
+              ><img
+                src="imagenes/iconos/linkedin-logo.svg"
+                class="iconos-redes"
+                alt=""
+            /></a>
+            <a href="https://www.instagram.com/alba_kainer/" target="_blank"
+              ><img
+                src="imagenes/iconos/instagram-logo.svg"
+                class="iconos-redes"
+                alt=""
+            /></a>
+          </div>
+          <p id="footer-text">
+            Todos los derechos reservados - Icon made by Free icons from
+            www.freeicons.io
+          </p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
